@@ -63,6 +63,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ForumForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForumForm.Designer.cs">
+      <DependentUpon>ForumForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MailSender.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

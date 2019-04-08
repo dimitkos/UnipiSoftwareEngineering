@@ -25,5 +25,14 @@ namespace UnipiTexnologiaLogismikou
             //twra h prwth form kryvetai
             this.Hide();
         }
+
+        private void forumbutton_Click(object sender, EventArgs e)
+        {
+            ForumForm forumform = new ForumForm();
+            //h deyterh forma emfanizetai,tis exv syndesh mesw tou this.h deyterh forma exei owner thn prwth
+            forumform.Show(this);
+            //twra h prwth form kryvetai
+            this.Hide();
+        }
     }
 }

@@ -66,6 +66,7 @@
             this.forumbutton.TabIndex = 2;
             this.forumbutton.Text = "Visit Forum";
             this.forumbutton.UseVisualStyleBackColor = true;
+            this.forumbutton.Click += new System.EventHandler(this.forumbutton_Click);
             // 
             // UserMenu
             // 
