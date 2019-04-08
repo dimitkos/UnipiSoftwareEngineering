@@ -43,6 +43,7 @@
             this.emailbutton.TabIndex = 0;
             this.emailbutton.Text = "Email to Instructor";
             this.emailbutton.UseVisualStyleBackColor = true;
+            this.emailbutton.Click += new System.EventHandler(this.emailbutton_Click);
             // 
             // uploadbutton
             // 

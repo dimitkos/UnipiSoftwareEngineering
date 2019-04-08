@@ -16,5 +16,14 @@ namespace UnipiTexnologiaLogismikou
         {
             InitializeComponent();
         }
+
+        private void emailbutton_Click(object sender, EventArgs e)
+        {
+            EmailForm emailform = new EmailForm();
+            //h deyterh forma emfanizetai,tis exv syndesh mesw tou this.h deyterh forma exei owner thn prwth
+            emailform.Show(this);
+            //twra h prwth form kryvetai
+            this.Hide();
+        }
     }
 }
