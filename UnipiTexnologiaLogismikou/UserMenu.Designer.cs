@@ -28,12 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.emailbutton = new System.Windows.Forms.Button();
+            this.uploadbutton = new System.Windows.Forms.Button();
+            this.forumbutton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // emailbutton
+            // 
+            this.emailbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.emailbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.emailbutton.Location = new System.Drawing.Point(103, 140);
+            this.emailbutton.Name = "emailbutton";
+            this.emailbutton.Size = new System.Drawing.Size(120, 23);
+            this.emailbutton.TabIndex = 0;
+            this.emailbutton.Text = "Email to Instructor";
+            this.emailbutton.UseVisualStyleBackColor = true;
+            // 
+            // uploadbutton
+            // 
+            this.uploadbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uploadbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.uploadbutton.Location = new System.Drawing.Point(103, 189);
+            this.uploadbutton.Name = "uploadbutton";
+            this.uploadbutton.Size = new System.Drawing.Size(120, 23);
+            this.uploadbutton.TabIndex = 1;
+            this.uploadbutton.Text = "Upload your Thesis";
+            this.uploadbutton.UseVisualStyleBackColor = true;
+            // 
+            // forumbutton
+            // 
+            this.forumbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.forumbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.forumbutton.Location = new System.Drawing.Point(103, 241);
+            this.forumbutton.Name = "forumbutton";
+            this.forumbutton.Size = new System.Drawing.Size(120, 23);
+            this.forumbutton.TabIndex = 2;
+            this.forumbutton.Text = "Visit Forum";
+            this.forumbutton.UseVisualStyleBackColor = true;
+            // 
+            // UserMenu
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.forumbutton);
+            this.Controls.Add(this.uploadbutton);
+            this.Controls.Add(this.emailbutton);
+            this.Name = "UserMenu";
             this.Text = "UserMenu";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button emailbutton;
+        private System.Windows.Forms.Button uploadbutton;
+        private System.Windows.Forms.Button forumbutton;
     }
 }
