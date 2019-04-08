@@ -7,14 +7,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net.Mail;
 
 namespace UnipiTexnologiaLogismikou
 {
     public partial class EmailForm : Form
     {
+        //δηλωνουμε μια αναφορα τυπου MailMessage
+        MailMessage msg;
         public EmailForm()
         {
             InitializeComponent();
+        }
+
+        private void senmailbutton_Click(object sender, EventArgs e)
+        {
+            //για τις αναγκες της παρουσας εργασιας φτιαξαμε ενα mail projectsunipi@gmail.com.
+            //για λογους ασφαλειας επιλεξαμε μην βαζει ακποιος το κανονικο μεηλ του και τους κωδικους του
+            //ετσι λοιπον οτι μεηλ και να γραψει στο textbox θα φυγει και θα παραληφθει απο το παραπανω μεηλ
+
+            MailSender msender = new MailSender();
+
+            msender.Sendmail(mailtextBox, messagetextBox);
         }
     }
 }
