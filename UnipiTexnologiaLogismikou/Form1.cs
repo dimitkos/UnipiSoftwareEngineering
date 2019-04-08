@@ -50,11 +50,11 @@ namespace UnipiTexnologiaLogismikou
                     //tha vgalei mhnyma epityxias tou login
                     MessageBox.Show("Login successfull");
 
-                    //UserForm userform = new UserForm();
+                    AdminMenu adminmenu = new AdminMenu();
                     //h deyterh forma emfanizetai,tis exv syndesh mesw tou this.h deyterh forma exei owner thn prwth
-                    //userform.Show(this);
+                    adminmenu.Show(this);
                     //twra h prwth form kryvetai
-                   // this.Hide();
+                    this.Hide();
 
                 }
                 else
@@ -94,11 +94,11 @@ namespace UnipiTexnologiaLogismikou
                     //tha vgalei mhnyma epityxias tou login
                     MessageBox.Show("Login successfull");
 
-                    //UserForm userform = new UserForm();
+                    UserMenu usermenu = new UserMenu();
                     //h deyterh forma emfanizetai,tis exv syndesh mesw tou this.h deyterh forma exei owner thn prwth
-                    //userform.Show(this);
+                    usermenu.Show(this);
                     //twra h prwth form kryvetai
-                    // this.Hide();
+                    this.Hide();
 
                 }
                 else
