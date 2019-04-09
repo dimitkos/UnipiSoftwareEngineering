@@ -31,6 +31,7 @@
             this.emailbutton = new System.Windows.Forms.Button();
             this.uploadbutton = new System.Windows.Forms.Button();
             this.forumbutton = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // emailbutton
@@ -55,6 +56,7 @@
             this.uploadbutton.TabIndex = 1;
             this.uploadbutton.Text = "Upload your Thesis";
             this.uploadbutton.UseVisualStyleBackColor = true;
+            this.uploadbutton.Click += new System.EventHandler(this.uploadbutton_Click);
             // 
             // forumbutton
             // 
@@ -68,6 +70,10 @@
             this.forumbutton.UseVisualStyleBackColor = true;
             this.forumbutton.Click += new System.EventHandler(this.forumbutton_Click);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // UserMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -78,6 +84,7 @@
             this.Controls.Add(this.emailbutton);
             this.Name = "UserMenu";
             this.Text = "UserMenu";
+            this.Load += new System.EventHandler(this.UserMenu_Load);
             this.ResumeLayout(false);
 
         }
@@ -87,5 +94,6 @@
         private System.Windows.Forms.Button emailbutton;
         private System.Windows.Forms.Button uploadbutton;
         private System.Windows.Forms.Button forumbutton;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

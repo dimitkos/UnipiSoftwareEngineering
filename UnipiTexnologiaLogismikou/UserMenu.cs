@@ -17,6 +17,15 @@ namespace UnipiTexnologiaLogismikou
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Teo
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// 
+        OpenFileDialog ofd = new OpenFileDialog();
+
+
         private void emailbutton_Click(object sender, EventArgs e)
         {
             EmailForm emailform = new EmailForm();
@@ -33,6 +42,22 @@ namespace UnipiTexnologiaLogismikou
             forumform.Show(this);
             //twra h prwth form kryvetai
             this.Hide();
+        }
+
+        private void UserMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uploadbutton_Click(object sender, EventArgs e)
+        {
+            //Ean o xristis vali arxio thesis , sinexizi o kodikas
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                uploadbutton.Enabled = false;
+                uploadbutton.Text = "Thesis Uploded";
+                MessageBox.Show("Thesis Uploded Successfully");
+            };
         }
     }
 }
