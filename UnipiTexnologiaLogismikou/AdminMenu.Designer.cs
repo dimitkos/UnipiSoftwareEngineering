@@ -28,12 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.dbbutton = new System.Windows.Forms.Button();
+            this.commentbutton = new System.Windows.Forms.Button();
+            this.progressbutton = new System.Windows.Forms.Button();
+            this.reportbutton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // dbbutton
+            // 
+            this.dbbutton.Location = new System.Drawing.Point(98, 145);
+            this.dbbutton.Name = "dbbutton";
+            this.dbbutton.Size = new System.Drawing.Size(75, 23);
+            this.dbbutton.TabIndex = 0;
+            this.dbbutton.Text = "database";
+            this.dbbutton.UseVisualStyleBackColor = true;
+            // 
+            // commentbutton
+            // 
+            this.commentbutton.Location = new System.Drawing.Point(235, 145);
+            this.commentbutton.Name = "commentbutton";
+            this.commentbutton.Size = new System.Drawing.Size(75, 23);
+            this.commentbutton.TabIndex = 1;
+            this.commentbutton.Text = "comment";
+            this.commentbutton.UseVisualStyleBackColor = true;
+            // 
+            // progressbutton
+            // 
+            this.progressbutton.Location = new System.Drawing.Point(384, 145);
+            this.progressbutton.Name = "progressbutton";
+            this.progressbutton.Size = new System.Drawing.Size(75, 23);
+            this.progressbutton.TabIndex = 2;
+            this.progressbutton.Text = "progress";
+            this.progressbutton.UseVisualStyleBackColor = true;
+            // 
+            // reportbutton
+            // 
+            this.reportbutton.Location = new System.Drawing.Point(527, 145);
+            this.reportbutton.Name = "reportbutton";
+            this.reportbutton.Size = new System.Drawing.Size(75, 23);
+            this.reportbutton.TabIndex = 3;
+            this.reportbutton.Text = "reporting";
+            this.reportbutton.UseVisualStyleBackColor = true;
+            // 
+            // AdminMenu
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.reportbutton);
+            this.Controls.Add(this.progressbutton);
+            this.Controls.Add(this.commentbutton);
+            this.Controls.Add(this.dbbutton);
+            this.Name = "AdminMenu";
             this.Text = "AdminMenu";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button dbbutton;
+        private System.Windows.Forms.Button commentbutton;
+        private System.Windows.Forms.Button progressbutton;
+        private System.Windows.Forms.Button reportbutton;
     }
 }
