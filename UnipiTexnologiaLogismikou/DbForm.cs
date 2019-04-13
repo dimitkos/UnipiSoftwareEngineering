@@ -41,5 +41,26 @@ namespace UnipiTexnologiaLogismikou
                 MessageBox.Show("Failed to add data");
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            std.id = amtxt.Text;
+            std.namesurname = nametxt.Text;
+            std.thesis = thesistxt.Text;
+            std.startdate = DateTime.Now;
+            std.languages = languagestxt.Text;
+            std.framework = frameworktxt.Text;
+
+            bool success = stddal.Update(std);
+            if(success==true)
+            {
+                MessageBox.Show("Successfully update");
+                
+            }
+            else
+            {
+                MessageBox.Show("Failed to update");
+            }
+        }
     }
 }
