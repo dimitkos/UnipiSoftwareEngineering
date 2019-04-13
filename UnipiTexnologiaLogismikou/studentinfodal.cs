@@ -100,6 +100,57 @@ namespace UnipiTexnologiaLogismikou
 
             return isSuccess;
         }
-            #endregion
+        #endregion
+
+        #region Delete from Database
+        public bool Delete(StudentInfo stdinfo)
+        {
+            //alose declare a boole variable
+            bool isSuccess = false;
+
+            //sql connection
+            SqlConnection conn = new SqlConnection(myconnstring);
+
+            try
+            {
+                //writing query to delete data
+                String sql = "DELETE FROM studentinfo WHERE id=@id";
+
+                //sql command
+                SqlCommand cmd = new SqlCommand(sql, conn);
+
+                //parameters
+                cmd.Parameters.AddWithValue("@id", stdinfo.id);
+
+                //open connection
+                conn.Open();
+
+                //integer variable which holds the code to execute the query
+                int rows = cmd.ExecuteNonQuery();
+
+                if (rows > 0)
+                {
+                    //query successful
+                    isSuccess = true;
+                }
+                else
+                {
+                    //query failed
+                    isSuccess = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                //close connection
+                conn.Close();
+            }
+            //and return this value
+            return isSuccess;
+        }
+        #endregion
     }
 }

@@ -62,5 +62,19 @@ namespace UnipiTexnologiaLogismikou
                 MessageBox.Show("Failed to update");
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            std.id = amtxt.Text;
+            bool success = stddal.Delete(std);
+            if (success == true)
+            {
+                MessageBox.Show("User deleted successfully");
+            }
+            else
+            {
+                MessageBox.Show("Failed to delete user");
+            }
+        }
     }
 }
