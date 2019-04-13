@@ -42,6 +42,7 @@
             this.dbbutton.TabIndex = 0;
             this.dbbutton.Text = "database";
             this.dbbutton.UseVisualStyleBackColor = true;
+            this.dbbutton.Click += new System.EventHandler(this.dbbutton_Click_1);
             // 
             // commentbutton
             // 

@@ -16,5 +16,14 @@ namespace UnipiTexnologiaLogismikou
         {
             InitializeComponent();
         }
+
+
+
+        private void dbbutton_Click_1(object sender, EventArgs e)
+        {
+            DbForm dbform = new DbForm();
+            dbform.Show(this);
+            this.Hide();
+        }
     }
 }
