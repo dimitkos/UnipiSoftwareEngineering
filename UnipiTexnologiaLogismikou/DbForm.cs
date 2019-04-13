@@ -34,12 +34,14 @@ namespace UnipiTexnologiaLogismikou
             {
                 //Data successfully Inserted
                 MessageBox.Show("Data added successfully");
+                clear();
             }
             else
             {
                 //Failed to insert data
                 MessageBox.Show("Failed to add data");
             }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -70,11 +72,34 @@ namespace UnipiTexnologiaLogismikou
             if (success == true)
             {
                 MessageBox.Show("User deleted successfully");
+                clear();
             }
             else
             {
                 MessageBox.Show("Failed to delete user");
             }
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            DataTable dt = stddal.Select();
+            dataGridView1.DataSource = dt;
+        }
+
+        private void DbForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        public void clear()
+        {
+            amtxt.Text = "";
+            thesistxt.Text = "";
+            nametxt.Text = "";
+            datetxt.Text = "";
+            languagestxt.Text = "";
+            frameworktxt.Text = "";
         }
     }
 }

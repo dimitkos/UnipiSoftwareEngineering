@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -150,6 +151,33 @@ namespace UnipiTexnologiaLogismikou
             }
             //and return this value
             return isSuccess;
+        }
+        #endregion
+
+        #region Select data from database
+        public DataTable Select()
+        {
+            SqlConnection con = new SqlConnection(myconnstring);
+
+            DataTable dt = new DataTable();
+            try
+            {
+                String sql = "SELECT * FROM studentinfo";
+                SqlCommand cmd = new SqlCommand(sql, con);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                con.Open();
+                adapter.Fill(dt);
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+            return dt;
         }
         #endregion
     }
