@@ -79,6 +79,7 @@
             this.reportbutton.TabIndex = 3;
             this.reportbutton.Text = "reporting";
             this.reportbutton.UseVisualStyleBackColor = true;
+            this.reportbutton.Click += new System.EventHandler(this.reportbutton_Click);
             // 
             // finalgradebutton
             // 

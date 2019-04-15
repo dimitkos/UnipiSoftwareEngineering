@@ -87,6 +87,12 @@
     <Compile Include="MailSender.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportingForm.Designer.cs">
+      <DependentUpon>ReportingForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentInfo.cs" />
     <Compile Include="studentinfodal.cs" />
     <Compile Include="UserMenu.cs">
@@ -119,6 +125,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ReportingForm.resx">
+      <DependentUpon>ReportingForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserMenu.resx">
       <DependentUpon>UserMenu.cs</DependentUpon>
     </EmbeddedResource>

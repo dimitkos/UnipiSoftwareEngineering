@@ -32,5 +32,12 @@ namespace UnipiTexnologiaLogismikou
             finalgradeform.Show(this);
             this.Hide();
         }
+
+        private void reportbutton_Click(object sender, EventArgs e)
+        {
+            ReportingForm reportingform = new ReportingForm();
+            reportingform.Show(this);
+            this.Hide();
+        }
     }
 }
