@@ -64,6 +64,12 @@
     <Compile Include="EmailForm.Designer.cs">
       <DependentUpon>EmailForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FinalGradeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalGradeForm.Designer.cs">
+      <DependentUpon>FinalGradeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EmailForm.resx">
       <DependentUpon>EmailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalGradeForm.resx">
+      <DependentUpon>FinalGradeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

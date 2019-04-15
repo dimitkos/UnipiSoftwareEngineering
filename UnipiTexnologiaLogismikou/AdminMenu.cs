@@ -25,5 +25,12 @@ namespace UnipiTexnologiaLogismikou
             dbform.Show(this);
             this.Hide();
         }
+
+        private void finalgradebutton_Click(object sender, EventArgs e)
+        {
+            FinalGradeForm finalgradeform = new FinalGradeForm();
+            finalgradeform.Show(this);
+            this.Hide();
+        }
     }
 }
