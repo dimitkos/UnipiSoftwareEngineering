@@ -76,5 +76,94 @@ namespace UnipiTexnologiaLogismikou
             }
             return isSuccess;
         }
+
+
+        public bool Update(GradesInfo grdinfo)
+        {
+            bool isSuccess = false;
+            SqlConnection conn1 = new SqlConnection(myconnstring);
+
+            try
+            {
+
+                string sql = " UPDATE grade SET grades=@grades WHERE id=@id ";
+                SqlCommand cmd = new SqlCommand(sql, conn1);
+
+                cmd.Parameters.AddWithValue("@id", grdinfo.id);
+                cmd.Parameters.AddWithValue("@grades", grdinfo.grades);
+
+
+                conn1.Open();
+                int rows = cmd.ExecuteNonQuery();
+                if (rows > 0)
+                {
+                    //Successfull
+                    isSuccess = true;
+                }
+                else
+                {
+                    isSuccess = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn1.Close();
+            }
+
+            return isSuccess;
+        }
+
+        public bool Delete(GradesInfo grdinfo)
+        {
+            //alose declare a boole variable
+            bool isSuccess = false;
+
+            //sql connection
+            SqlConnection conn = new SqlConnection(myconnstring);
+
+            try
+            {
+                //writing query to delete data
+                String sql = "DELETE FROM grade WHERE id=@id";
+
+                //sql command
+                SqlCommand cmd = new SqlCommand(sql, conn);
+
+                //parameters
+                cmd.Parameters.AddWithValue("@id", grdinfo.id);
+
+                //open connection
+                conn.Open();
+
+                //integer variable which holds the code to execute the query
+                int rows = cmd.ExecuteNonQuery();
+
+                if (rows > 0)
+                {
+                    //query successful
+                    isSuccess = true;
+                }
+                else
+                {
+                    //query failed
+                    isSuccess = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                //close connection
+                conn.Close();
+            }
+            //and return this value
+            return isSuccess;
+        }
     }
 }

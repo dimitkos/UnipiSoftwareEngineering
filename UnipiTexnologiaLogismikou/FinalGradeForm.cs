@@ -37,13 +37,52 @@ namespace UnipiTexnologiaLogismikou
             {
                 //Data successfully Inserted
                 MessageBox.Show("Data added successfully");
-                //clear();
+                clear();
             }
             else
             {
                 //Failed to insert data
                 MessageBox.Show("Failed to add data");
             }
+        }
+
+        private void updatebutton_Click(object sender, EventArgs e)
+        {
+            grd.id = idtextBox.Text;
+            grd.grades = gradetextBox.Text;
+
+
+            bool success = grddal.Update(grd);
+            if (success == true)
+            {
+                MessageBox.Show("Successfully update");
+                clear();
+            }
+            else
+            {
+                MessageBox.Show("Failed to update");
+            }
+        }
+
+        private void deletebutton_Click(object sender, EventArgs e)
+        {
+            grd.id = idtextBox.Text;
+            bool success = grddal.Delete(grd);
+            if (success == true)
+            {
+                MessageBox.Show("User deleted successfully");
+                clear();
+            }
+            else
+            {
+                MessageBox.Show("Failed to delete user");
+            }
+        }
+
+        private void clear()
+        {
+            idtextBox.Text = "";
+            gradetextBox.Text = "";
         }
     }
 }

@@ -79,6 +79,7 @@
             this.updatebutton.TabIndex = 3;
             this.updatebutton.Text = "Update";
             this.updatebutton.UseVisualStyleBackColor = true;
+            this.updatebutton.Click += new System.EventHandler(this.updatebutton_Click);
             // 
             // deletebutton
             // 
@@ -89,6 +90,7 @@
             this.deletebutton.TabIndex = 4;
             this.deletebutton.Text = "Delete";
             this.deletebutton.UseVisualStyleBackColor = true;
+            this.deletebutton.Click += new System.EventHandler(this.deletebutton_Click);
             // 
             // label1
             // 
