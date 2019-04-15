@@ -63,6 +63,7 @@
             this.viewbutton.TabIndex = 2;
             this.viewbutton.Text = "View";
             this.viewbutton.UseVisualStyleBackColor = true;
+            this.viewbutton.Click += new System.EventHandler(this.viewbutton_Click);
             // 
             // updatebutton
             // 
