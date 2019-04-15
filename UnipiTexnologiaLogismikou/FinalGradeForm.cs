@@ -25,5 +25,25 @@ namespace UnipiTexnologiaLogismikou
             DataTable dt = grddal.Select();
             dataGridView1.DataSource = dt;
         }
+
+        private void addbutton_Click(object sender, EventArgs e)
+        {
+            grd.id = idtextBox.Text;
+            grd.grades = gradetextBox.Text;
+
+
+            bool success = grddal.Insert(grd);
+            if (success == true)
+            {
+                //Data successfully Inserted
+                MessageBox.Show("Data added successfully");
+                //clear();
+            }
+            else
+            {
+                //Failed to insert data
+                MessageBox.Show("Failed to add data");
+            }
+        }
     }
 }

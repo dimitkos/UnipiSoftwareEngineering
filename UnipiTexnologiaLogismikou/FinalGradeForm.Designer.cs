@@ -33,6 +33,10 @@
             this.viewbutton = new System.Windows.Forms.Button();
             this.updatebutton = new System.Windows.Forms.Button();
             this.deletebutton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.idtextBox = new System.Windows.Forms.TextBox();
+            this.gradetextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,17 +51,18 @@
             // addbutton
             // 
             this.addbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.addbutton.Location = new System.Drawing.Point(58, 156);
+            this.addbutton.Location = new System.Drawing.Point(58, 237);
             this.addbutton.Name = "addbutton";
             this.addbutton.Size = new System.Drawing.Size(75, 23);
             this.addbutton.TabIndex = 1;
             this.addbutton.Text = "Add";
             this.addbutton.UseVisualStyleBackColor = true;
+            this.addbutton.Click += new System.EventHandler(this.addbutton_Click);
             // 
             // viewbutton
             // 
             this.viewbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.viewbutton.Location = new System.Drawing.Point(58, 110);
+            this.viewbutton.Location = new System.Drawing.Point(58, 188);
             this.viewbutton.Name = "viewbutton";
             this.viewbutton.Size = new System.Drawing.Size(75, 23);
             this.viewbutton.TabIndex = 2;
@@ -68,7 +73,7 @@
             // updatebutton
             // 
             this.updatebutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.updatebutton.Location = new System.Drawing.Point(58, 197);
+            this.updatebutton.Location = new System.Drawing.Point(58, 292);
             this.updatebutton.Name = "updatebutton";
             this.updatebutton.Size = new System.Drawing.Size(75, 23);
             this.updatebutton.TabIndex = 3;
@@ -78,18 +83,54 @@
             // deletebutton
             // 
             this.deletebutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.deletebutton.Location = new System.Drawing.Point(58, 241);
+            this.deletebutton.Location = new System.Drawing.Point(58, 347);
             this.deletebutton.Name = "deletebutton";
             this.deletebutton.Size = new System.Drawing.Size(75, 23);
             this.deletebutton.TabIndex = 4;
             this.deletebutton.Text = "Delete";
             this.deletebutton.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(29, 82);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(16, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Id";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(32, 125);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(36, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Grade";
+            // 
+            // idtextBox
+            // 
+            this.idtextBox.Location = new System.Drawing.Point(96, 82);
+            this.idtextBox.Name = "idtextBox";
+            this.idtextBox.Size = new System.Drawing.Size(100, 20);
+            this.idtextBox.TabIndex = 7;
+            // 
+            // gradetextBox
+            // 
+            this.gradetextBox.Location = new System.Drawing.Point(96, 117);
+            this.gradetextBox.Name = "gradetextBox";
+            this.gradetextBox.Size = new System.Drawing.Size(100, 20);
+            this.gradetextBox.TabIndex = 8;
+            // 
             // FinalGradeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.gradetextBox);
+            this.Controls.Add(this.idtextBox);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.deletebutton);
             this.Controls.Add(this.updatebutton);
             this.Controls.Add(this.viewbutton);
@@ -100,6 +141,7 @@
             this.Text = "FinalGradeForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -110,5 +152,9 @@
         private System.Windows.Forms.Button viewbutton;
         private System.Windows.Forms.Button updatebutton;
         private System.Windows.Forms.Button deletebutton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox idtextBox;
+        private System.Windows.Forms.TextBox gradetextBox;
     }
 }
