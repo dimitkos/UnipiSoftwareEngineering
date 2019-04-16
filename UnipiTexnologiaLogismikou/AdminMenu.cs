@@ -47,7 +47,9 @@ namespace UnipiTexnologiaLogismikou
 
         private void commentbutton_Click(object sender, EventArgs e)
         {
-
+            CommentForm commentform = new CommentForm();
+            commentform.Show(this);
+            this.Hide();
         }
 
         private void progressbutton_Click(object sender, EventArgs e)
