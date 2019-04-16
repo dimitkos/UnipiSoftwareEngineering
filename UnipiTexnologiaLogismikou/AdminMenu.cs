@@ -52,7 +52,9 @@ namespace UnipiTexnologiaLogismikou
 
         private void progressbutton_Click(object sender, EventArgs e)
         {
-
+            ProgressForm progressForm = new ProgressForm();
+            progressForm.Show(this);
+            this.Hide();
         }
     }
 }

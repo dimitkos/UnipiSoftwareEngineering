@@ -117,6 +117,7 @@
             this.idtextBox.Name = "idtextBox";
             this.idtextBox.Size = new System.Drawing.Size(100, 20);
             this.idtextBox.TabIndex = 7;
+            this.idtextBox.TextChanged += new System.EventHandler(this.idtextBox_TextChanged);
             // 
             // gradetextBox
             // 
