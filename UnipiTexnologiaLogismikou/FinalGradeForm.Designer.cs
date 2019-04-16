@@ -155,6 +155,8 @@
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "FinalGradeForm";
             this.Text = "FinalGradeForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FinalGradeForm_FormClosing);
+            this.Load += new System.EventHandler(this.FinalGradeForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

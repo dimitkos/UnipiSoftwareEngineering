@@ -104,6 +104,8 @@
             this.Controls.Add(this.label1);
             this.Name = "EmailForm";
             this.Text = "EmailForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EmailForm_FormClosing);
+            this.Load += new System.EventHandler(this.EmailForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

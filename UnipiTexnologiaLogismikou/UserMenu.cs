@@ -59,5 +59,10 @@ namespace UnipiTexnologiaLogismikou
                 MessageBox.Show("Thesis Uploded Successfully");
             };
         }
+
+        private void UserMenu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

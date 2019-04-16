@@ -125,6 +125,8 @@
             this.Controls.Add(this.progressBar1);
             this.Name = "ProgressForm";
             this.Text = "ProgressForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ProgressForm_FormClosing);
+            this.Load += new System.EventHandler(this.ProgressForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -69,5 +69,15 @@ namespace UnipiTexnologiaLogismikou
                 progressBar1.PerformStep();
             }
         }
+
+        private void ProgressForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void ProgressForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

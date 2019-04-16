@@ -84,6 +84,7 @@
             this.Controls.Add(this.emailbutton);
             this.Name = "UserMenu";
             this.Text = "UserMenu";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UserMenu_FormClosing);
             this.Load += new System.EventHandler(this.UserMenu_Load);
             this.ResumeLayout(false);
 

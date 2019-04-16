@@ -101,5 +101,15 @@ namespace UnipiTexnologiaLogismikou
         {
 
         }
+
+        private void FinalGradeForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void FinalGradeForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -125,6 +125,11 @@ namespace UnipiTexnologiaLogismikou
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+
+            //////////////////////////////////////////////////////////////////////////////////////
+            //Teo : To minima afto pernaei se oles tis ales formes , to vazo se sxolio prosorina//
+            //////////////////////////////////////////////////////////////////////////////////////
+            /*
             // otan pame na klisoume thn efarmogh patwntas x,tha vgei ena mnm pou tha mas rwtaei ti theloume na kanoume
             //an pathsoume nai tote tha klisei alliws oxi tha meinei opws einai
             DialogResult dialogResult1 = MessageBox.Show("Are you sure ?", "Question", MessageBoxButtons.YesNo);
@@ -137,7 +142,7 @@ namespace UnipiTexnologiaLogismikou
             {
 
                 e.Cancel = true;
-            }
+            }*/
         }
 
         private void label3_Click(object sender, EventArgs e)

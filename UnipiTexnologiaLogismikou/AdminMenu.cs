@@ -56,5 +56,10 @@ namespace UnipiTexnologiaLogismikou
             progressForm.Show(this);
             this.Hide();
         }
+
+        private void AdminMenu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

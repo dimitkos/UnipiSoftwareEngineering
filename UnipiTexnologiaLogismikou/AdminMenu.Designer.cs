@@ -107,6 +107,7 @@
             this.Controls.Add(this.dbbutton);
             this.Name = "AdminMenu";
             this.Text = "AdminMenu";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AdminMenu_FormClosing);
             this.Load += new System.EventHandler(this.AdminMenu_Load);
             this.ResumeLayout(false);
 

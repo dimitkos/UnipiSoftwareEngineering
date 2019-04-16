@@ -228,6 +228,7 @@
             this.Controls.Add(this.button1);
             this.Name = "DbForm";
             this.Text = "DbForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DbForm_FormClosing);
             this.Load += new System.EventHandler(this.DbForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

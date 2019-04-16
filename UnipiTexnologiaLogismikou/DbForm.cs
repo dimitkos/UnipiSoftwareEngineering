@@ -107,5 +107,10 @@ namespace UnipiTexnologiaLogismikou
             Form1.Show(this);
             this.Hide();
         }
+
+        private void DbForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
