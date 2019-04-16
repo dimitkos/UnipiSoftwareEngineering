@@ -50,14 +50,19 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(201, 184);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label2.Location = new System.Drawing.Point(177, 177);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 13);
+            this.label2.Size = new System.Drawing.Size(73, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Progress";
             // 
             // Viewbutton
             // 
+            this.Viewbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Viewbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Viewbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.Viewbutton.Location = new System.Drawing.Point(160, 338);
             this.Viewbutton.Name = "Viewbutton";
             this.Viewbutton.Size = new System.Drawing.Size(75, 23);
@@ -68,6 +73,9 @@
             // 
             // backbutton
             // 
+            this.backbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.backbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.backbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.backbutton.Location = new System.Drawing.Point(583, 338);
             this.backbutton.Name = "backbutton";
             this.backbutton.Size = new System.Drawing.Size(75, 23);
@@ -94,14 +102,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label1.Location = new System.Drawing.Point(157, 70);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.Size = new System.Drawing.Size(84, 17);
             this.label1.TabIndex = 8;
             this.label1.Text = "Student ID";
             // 
             // button1
             // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button1.Location = new System.Drawing.Point(248, 112);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);

@@ -39,11 +39,12 @@
             // 
             this.dbbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dbbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.dbbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.dbbutton.Location = new System.Drawing.Point(98, 145);
             this.dbbutton.Name = "dbbutton";
             this.dbbutton.Size = new System.Drawing.Size(75, 23);
             this.dbbutton.TabIndex = 0;
-            this.dbbutton.Text = "database";
+            this.dbbutton.Text = "Database";
             this.dbbutton.UseVisualStyleBackColor = true;
             this.dbbutton.Click += new System.EventHandler(this.dbbutton_Click_1);
             // 
@@ -51,11 +52,12 @@
             // 
             this.commentbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.commentbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.commentbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.commentbutton.Location = new System.Drawing.Point(235, 145);
             this.commentbutton.Name = "commentbutton";
             this.commentbutton.Size = new System.Drawing.Size(75, 23);
             this.commentbutton.TabIndex = 1;
-            this.commentbutton.Text = "comment";
+            this.commentbutton.Text = "Comment";
             this.commentbutton.UseVisualStyleBackColor = true;
             this.commentbutton.Click += new System.EventHandler(this.commentbutton_Click);
             // 
@@ -63,11 +65,12 @@
             // 
             this.progressbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.progressbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.progressbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.progressbutton.Location = new System.Drawing.Point(384, 145);
             this.progressbutton.Name = "progressbutton";
             this.progressbutton.Size = new System.Drawing.Size(75, 23);
             this.progressbutton.TabIndex = 2;
-            this.progressbutton.Text = "progress";
+            this.progressbutton.Text = "Progress";
             this.progressbutton.UseVisualStyleBackColor = true;
             this.progressbutton.Click += new System.EventHandler(this.progressbutton_Click);
             // 
@@ -75,11 +78,12 @@
             // 
             this.reportbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.reportbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.reportbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.reportbutton.Location = new System.Drawing.Point(527, 145);
             this.reportbutton.Name = "reportbutton";
             this.reportbutton.Size = new System.Drawing.Size(75, 23);
             this.reportbutton.TabIndex = 3;
-            this.reportbutton.Text = "reporting";
+            this.reportbutton.Text = "Reporting";
             this.reportbutton.UseVisualStyleBackColor = true;
             this.reportbutton.Click += new System.EventHandler(this.reportbutton_Click);
             // 
@@ -87,11 +91,12 @@
             // 
             this.finalgradebutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.finalgradebutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.finalgradebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.finalgradebutton.Location = new System.Drawing.Point(640, 145);
             this.finalgradebutton.Name = "finalgradebutton";
             this.finalgradebutton.Size = new System.Drawing.Size(87, 23);
             this.finalgradebutton.TabIndex = 4;
-            this.finalgradebutton.Text = "Add final grade";
+            this.finalgradebutton.Text = "Add  Grade";
             this.finalgradebutton.UseVisualStyleBackColor = true;
             this.finalgradebutton.Click += new System.EventHandler(this.finalgradebutton_Click);
             // 

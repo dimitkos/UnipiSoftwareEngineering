@@ -53,6 +53,7 @@
             // addbutton
             // 
             this.addbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.addbutton.Location = new System.Drawing.Point(58, 237);
             this.addbutton.Name = "addbutton";
             this.addbutton.Size = new System.Drawing.Size(75, 23);
@@ -64,6 +65,7 @@
             // viewbutton
             // 
             this.viewbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.viewbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.viewbutton.Location = new System.Drawing.Point(58, 188);
             this.viewbutton.Name = "viewbutton";
             this.viewbutton.Size = new System.Drawing.Size(75, 23);
@@ -75,6 +77,7 @@
             // updatebutton
             // 
             this.updatebutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.updatebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.updatebutton.Location = new System.Drawing.Point(58, 292);
             this.updatebutton.Name = "updatebutton";
             this.updatebutton.Size = new System.Drawing.Size(75, 23);
@@ -86,6 +89,7 @@
             // deletebutton
             // 
             this.deletebutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.deletebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.deletebutton.Location = new System.Drawing.Point(58, 347);
             this.deletebutton.Name = "deletebutton";
             this.deletebutton.Size = new System.Drawing.Size(75, 23);
@@ -97,18 +101,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label1.Location = new System.Drawing.Point(29, 82);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(16, 13);
+            this.label1.Size = new System.Drawing.Size(21, 17);
             this.label1.TabIndex = 5;
             this.label1.Text = "Id";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 125);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label2.Location = new System.Drawing.Point(29, 118);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 13);
+            this.label2.Size = new System.Drawing.Size(53, 17);
             this.label2.TabIndex = 6;
             this.label2.Text = "Grade";
             // 
@@ -129,6 +137,7 @@
             // 
             // backbutton
             // 
+            this.backbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.backbutton.Location = new System.Drawing.Point(634, 379);
             this.backbutton.Name = "backbutton";
             this.backbutton.Size = new System.Drawing.Size(75, 23);

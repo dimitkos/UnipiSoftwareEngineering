@@ -38,7 +38,8 @@
             // 
             this.emailbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.emailbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.emailbutton.Location = new System.Drawing.Point(103, 140);
+            this.emailbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.emailbutton.Location = new System.Drawing.Point(91, 174);
             this.emailbutton.Name = "emailbutton";
             this.emailbutton.Size = new System.Drawing.Size(120, 23);
             this.emailbutton.TabIndex = 0;
@@ -50,7 +51,8 @@
             // 
             this.uploadbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uploadbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.uploadbutton.Location = new System.Drawing.Point(103, 189);
+            this.uploadbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.uploadbutton.Location = new System.Drawing.Point(287, 174);
             this.uploadbutton.Name = "uploadbutton";
             this.uploadbutton.Size = new System.Drawing.Size(120, 23);
             this.uploadbutton.TabIndex = 1;
@@ -62,7 +64,8 @@
             // 
             this.forumbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.forumbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.forumbutton.Location = new System.Drawing.Point(103, 241);
+            this.forumbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.forumbutton.Location = new System.Drawing.Point(474, 174);
             this.forumbutton.Name = "forumbutton";
             this.forumbutton.Size = new System.Drawing.Size(120, 23);
             this.forumbutton.TabIndex = 2;

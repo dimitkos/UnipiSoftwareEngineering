@@ -59,7 +59,7 @@ namespace UnipiTexnologiaLogismikou
         private void frameworkbutton_Click(object sender, EventArgs e)
         {
             var result = SelectFramework(textBox3.Text.Trim());
-            label3.Text = result.ToString();
+            label4.Text = result.ToString();
         }
 
         private int SelectFramework(string framework)

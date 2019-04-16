@@ -41,9 +41,10 @@
             // 
             this.adminbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.adminbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.adminbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.adminbutton.Location = new System.Drawing.Point(256, 250);
             this.adminbutton.Name = "adminbutton";
-            this.adminbutton.Size = new System.Drawing.Size(97, 23);
+            this.adminbutton.Size = new System.Drawing.Size(108, 23);
             this.adminbutton.TabIndex = 0;
             this.adminbutton.Text = "Login as Admin";
             this.adminbutton.UseVisualStyleBackColor = true;
@@ -53,6 +54,7 @@
             // 
             this.userbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.userbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.userbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.userbutton.Location = new System.Drawing.Point(370, 250);
             this.userbutton.Name = "userbutton";
             this.userbutton.Size = new System.Drawing.Size(101, 23);
@@ -64,18 +66,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(255, 96);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label1.Location = new System.Drawing.Point(255, 92);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 13);
+            this.label1.Size = new System.Drawing.Size(93, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "USERNAME";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label2.Location = new System.Drawing.Point(255, 159);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 13);
+            this.label2.Size = new System.Drawing.Size(96, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "PASSWORD";
             // 
@@ -96,9 +102,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label3.Location = new System.Drawing.Point(326, 359);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 13);
+            this.label3.Size = new System.Drawing.Size(127, 17);
             this.label3.TabIndex = 4;
             this.label3.Text = "Visit our website";
             this.label3.Click += new System.EventHandler(this.label3_Click);
