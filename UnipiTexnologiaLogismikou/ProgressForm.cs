@@ -19,6 +19,7 @@ namespace UnipiTexnologiaLogismikou
         public ProgressForm()
         {
             InitializeComponent();
+            progressBar1.Value = 0;
         }
 
         private void backbutton_Click(object sender, EventArgs e)
@@ -32,6 +33,41 @@ namespace UnipiTexnologiaLogismikou
         {
             DataTable dt = ProgressInfoDal.Select();
             dataGridView1.DataSource = dt;
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            progressBar1.Value = 0;
+            int i = Convert.ToInt32(textBox1.Text); // User id to check
+            int y = 0;
+            progressBar1.Step = 1; 
+
+            if (i == 1)
+            {
+                y = 70;
+            }
+            else if (i == 2)
+            {
+                y = 30;
+            }
+            else if (i == 3)
+            {
+                y = 90;
+            }
+            else if (i > 3 && i < 100)
+            {
+                y = 0;
+            }
+
+            for (int x = 0; x <= y; x++)
+            {
+                progressBar1.PerformStep();
+            }
         }
     }
 }
