@@ -78,7 +78,6 @@ namespace UnipiTexnologiaLogismikou
             {
                 MessageBox.Show("Failed to delete user");
             }
-            
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -100,6 +99,13 @@ namespace UnipiTexnologiaLogismikou
             datetxt.Text = "";
             languagestxt.Text = "";
             frameworktxt.Text = "";
+        }
+
+        private void backbutton_Click(object sender, EventArgs e)
+        {
+            AdminMenu Form1 = new AdminMenu();
+            Form1.Show(this);
+            this.Hide();
         }
     }
 }

@@ -39,5 +39,20 @@ namespace UnipiTexnologiaLogismikou
             reportingform.Show(this);
             this.Hide();
         }
+
+        private void AdminMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void commentbutton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressbutton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

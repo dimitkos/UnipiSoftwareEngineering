@@ -33,6 +33,7 @@
             this.mailtextBox = new System.Windows.Forms.TextBox();
             this.messagetextBox = new System.Windows.Forms.TextBox();
             this.senmailbutton = new System.Windows.Forms.Button();
+            this.backbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -80,11 +81,22 @@
             this.senmailbutton.UseVisualStyleBackColor = true;
             this.senmailbutton.Click += new System.EventHandler(this.senmailbutton_Click);
             // 
+            // backbutton
+            // 
+            this.backbutton.Location = new System.Drawing.Point(300, 355);
+            this.backbutton.Name = "backbutton";
+            this.backbutton.Size = new System.Drawing.Size(75, 23);
+            this.backbutton.TabIndex = 5;
+            this.backbutton.Text = "Back";
+            this.backbutton.UseVisualStyleBackColor = true;
+            this.backbutton.Click += new System.EventHandler(this.backbutton_Click);
+            // 
             // EmailForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.backbutton);
             this.Controls.Add(this.senmailbutton);
             this.Controls.Add(this.messagetextBox);
             this.Controls.Add(this.mailtextBox);
@@ -104,5 +116,6 @@
         private System.Windows.Forms.TextBox mailtextBox;
         private System.Windows.Forms.TextBox messagetextBox;
         private System.Windows.Forms.Button senmailbutton;
+        private System.Windows.Forms.Button backbutton;
     }
 }

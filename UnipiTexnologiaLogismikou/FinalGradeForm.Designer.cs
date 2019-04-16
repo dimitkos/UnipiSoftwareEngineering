@@ -37,6 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.idtextBox = new System.Windows.Forms.TextBox();
             this.gradetextBox = new System.Windows.Forms.TextBox();
+            this.backbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -124,11 +125,22 @@
             this.gradetextBox.Size = new System.Drawing.Size(100, 20);
             this.gradetextBox.TabIndex = 8;
             // 
+            // backbutton
+            // 
+            this.backbutton.Location = new System.Drawing.Point(634, 379);
+            this.backbutton.Name = "backbutton";
+            this.backbutton.Size = new System.Drawing.Size(75, 23);
+            this.backbutton.TabIndex = 9;
+            this.backbutton.Text = "Back";
+            this.backbutton.UseVisualStyleBackColor = true;
+            this.backbutton.Click += new System.EventHandler(this.backbutton_Click);
+            // 
             // FinalGradeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.backbutton);
             this.Controls.Add(this.gradetextBox);
             this.Controls.Add(this.idtextBox);
             this.Controls.Add(this.label2);
@@ -158,5 +170,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox idtextBox;
         private System.Windows.Forms.TextBox gradetextBox;
+        private System.Windows.Forms.Button backbutton;
     }
 }

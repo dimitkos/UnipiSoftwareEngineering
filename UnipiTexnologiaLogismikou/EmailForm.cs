@@ -30,5 +30,12 @@ namespace UnipiTexnologiaLogismikou
 
             msender.Sendmail(mailtextBox, messagetextBox);
         }
+
+        private void backbutton_Click(object sender, EventArgs e)
+        {
+            UserMenu Form1 = new UserMenu();
+            Form1.Show(this);
+            this.Hide();
+        }
     }
 }

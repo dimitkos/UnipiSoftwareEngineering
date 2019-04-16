@@ -84,5 +84,12 @@ namespace UnipiTexnologiaLogismikou
             idtextBox.Text = "";
             gradetextBox.Text = "";
         }
+
+        private void backbutton_Click(object sender, EventArgs e)
+        {
+            AdminMenu forumform = new AdminMenu();
+            forumform.Show(this);
+            this.Hide();
+        }
     }
 }

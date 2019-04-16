@@ -57,6 +57,7 @@
             this.commentbutton.TabIndex = 1;
             this.commentbutton.Text = "comment";
             this.commentbutton.UseVisualStyleBackColor = true;
+            this.commentbutton.Click += new System.EventHandler(this.commentbutton_Click);
             // 
             // progressbutton
             // 
@@ -68,6 +69,7 @@
             this.progressbutton.TabIndex = 2;
             this.progressbutton.Text = "progress";
             this.progressbutton.UseVisualStyleBackColor = true;
+            this.progressbutton.Click += new System.EventHandler(this.progressbutton_Click);
             // 
             // reportbutton
             // 
@@ -105,6 +107,7 @@
             this.Controls.Add(this.dbbutton);
             this.Name = "AdminMenu";
             this.Text = "AdminMenu";
+            this.Load += new System.EventHandler(this.AdminMenu_Load);
             this.ResumeLayout(false);
 
         }

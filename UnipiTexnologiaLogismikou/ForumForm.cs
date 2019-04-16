@@ -16,5 +16,12 @@ namespace UnipiTexnologiaLogismikou
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            UserMenu Form1 = new UserMenu();
+            Form1.Show(this);
+            this.Hide();
+        }
     }
 }
