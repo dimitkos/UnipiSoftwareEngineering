@@ -12,6 +12,10 @@ namespace UnipiTexnologiaLogismikou
 {
     public partial class ProgressForm : Form
     {
+
+        ProgressInfo grd = new ProgressInfo();
+        ProgressInfoDal grddal = new ProgressInfoDal();
+
         public ProgressForm()
         {
             InitializeComponent();
@@ -22,6 +26,12 @@ namespace UnipiTexnologiaLogismikou
             AdminMenu adminMenu = new AdminMenu();
             adminMenu.Show(this);
             this.Hide();
+        }
+
+        private void Viewbutton_Click(object sender, EventArgs e)
+        {
+            DataTable dt = ProgressInfoDal.Select();
+            dataGridView1.DataSource = dt;
         }
     }
 }
