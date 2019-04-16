@@ -207,6 +207,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::UnipiTexnologiaLogismikou.Properties.Resources.b;
             this.ClientSize = new System.Drawing.Size(1008, 496);
             this.Controls.Add(this.backbutton);
             this.Controls.Add(this.button4);

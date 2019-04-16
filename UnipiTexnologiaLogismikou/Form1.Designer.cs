@@ -41,7 +41,7 @@
             // 
             this.adminbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.adminbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.adminbutton.Location = new System.Drawing.Point(226, 250);
+            this.adminbutton.Location = new System.Drawing.Point(256, 250);
             this.adminbutton.Name = "adminbutton";
             this.adminbutton.Size = new System.Drawing.Size(97, 23);
             this.adminbutton.TabIndex = 0;
@@ -53,7 +53,7 @@
             // 
             this.userbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.userbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.userbutton.Location = new System.Drawing.Point(423, 250);
+            this.userbutton.Location = new System.Drawing.Point(370, 250);
             this.userbutton.Name = "userbutton";
             this.userbutton.Size = new System.Drawing.Size(101, 23);
             this.userbutton.TabIndex = 1;
@@ -73,7 +73,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(253, 159);
+            this.label2.Location = new System.Drawing.Point(255, 159);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 13);
             this.label2.TabIndex = 1;
@@ -107,6 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::UnipiTexnologiaLogismikou.Properties.Resources.b;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
