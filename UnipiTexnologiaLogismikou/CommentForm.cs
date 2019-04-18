@@ -94,5 +94,12 @@ namespace UnipiTexnologiaLogismikou
                 MessageBox.Show(e4.GetType().Name);
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AdminMenu Form1 = new AdminMenu();
+            Form1.Show(this);
+            this.Hide();
+        }
     }
 }
