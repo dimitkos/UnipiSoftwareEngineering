@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace UnipiTexnologiaLogismikou
 {
-    public class GradesInfo
+    public class Student : User
     {
-        public string id { get; set; }
-        public string grades { get; set; }
+        public GradesInfo gradesInfo;
+
+        public StudentInfo studentInfo;
+        
     }
 }

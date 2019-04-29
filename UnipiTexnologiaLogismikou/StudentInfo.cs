@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UnipiTexnologiaLogismikou
 {
-    class StudentInfo
+    public class StudentInfo
     {
         public string id { get; set; }
         public string namesurname { get; set; }

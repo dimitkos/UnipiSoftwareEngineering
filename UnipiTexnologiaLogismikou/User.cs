@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace UnipiTexnologiaLogismikou
 {
-    public class GradesInfo
+    public abstract class User
     {
-        public string id { get; set; }
-        public string grades { get; set; }
+        public string UserName { get; set; }
+        public string Password { get; set; }
     }
 }

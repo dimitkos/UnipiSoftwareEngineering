@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace UnipiTexnologiaLogismikou
 {
-    public class GradesInfo
+    public class Admin : User
     {
-        public string id { get; set; }
-        public string grades { get; set; }
     }
 }

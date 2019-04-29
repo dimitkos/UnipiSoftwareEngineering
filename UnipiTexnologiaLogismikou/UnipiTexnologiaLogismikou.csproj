@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.cs" />
     <Compile Include="AdminMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,8 +108,10 @@
     <Compile Include="ReportingForm.Designer.cs">
       <DependentUpon>ReportingForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Student.cs" />
     <Compile Include="StudentInfo.cs" />
     <Compile Include="studentinfodal.cs" />
+    <Compile Include="User.cs" />
     <Compile Include="UserMenu.cs">
       <SubType>Form</SubType>
     </Compile>
